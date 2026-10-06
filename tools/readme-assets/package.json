@@ -1,0 +1,18 @@
+{
+  "name": "readme-assets",
+  "private": true,
+  "type": "module",
+  "description": "Generates the profile README's SVG images into ../../assets",
+  "scripts": {
+    "fonts": "node scripts/fetch-fonts.mjs",
+    "shoot": "node scripts/shoot.mjs",
+    "build": "node scripts/fetch-fonts.mjs && node build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "fontkit": "^2.0.4",
+    "playwright": "~1.59.1",
+    "sharp": "^0.34.5",
+    "simple-icons": "^16.34.0"
+  }
+}
